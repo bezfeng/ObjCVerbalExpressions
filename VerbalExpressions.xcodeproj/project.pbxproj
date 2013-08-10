@@ -10,6 +10,7 @@
 		395DC12C17B57D1B00085C6B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 395DC12B17B57D1B00085C6B /* Foundation.framework */; };
 		395DC12F17B57D1B00085C6B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 395DC12E17B57D1B00085C6B /* main.m */; };
 		395DC13317B57D1B00085C6B /* VerbalExpressions.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = 395DC13217B57D1B00085C6B /* VerbalExpressions.1 */; };
+		395DC13B17B57D5B00085C6B /* BEZVerEx.m in Sources */ = {isa = PBXBuildFile; fileRef = 395DC13A17B57D5B00085C6B /* BEZVerEx.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -31,6 +32,8 @@
 		395DC12E17B57D1B00085C6B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		395DC13117B57D1B00085C6B /* VerbalExpressions-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "VerbalExpressions-Prefix.pch"; sourceTree = "<group>"; };
 		395DC13217B57D1B00085C6B /* VerbalExpressions.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = VerbalExpressions.1; sourceTree = "<group>"; };
+		395DC13917B57D5B00085C6B /* BEZVerEx.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BEZVerEx.h; sourceTree = "<group>"; };
+		395DC13A17B57D5B00085C6B /* BEZVerEx.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BEZVerEx.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +77,8 @@
 			isa = PBXGroup;
 			children = (
 				395DC12E17B57D1B00085C6B /* main.m */,
+				395DC13917B57D5B00085C6B /* BEZVerEx.h */,
+				395DC13A17B57D5B00085C6B /* BEZVerEx.m */,
 				395DC13217B57D1B00085C6B /* VerbalExpressions.1 */,
 				395DC13017B57D1B00085C6B /* Supporting Files */,
 			);
@@ -139,6 +144,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				395DC12F17B57D1B00085C6B /* main.m in Sources */,
+				395DC13B17B57D5B00085C6B /* BEZVerEx.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
