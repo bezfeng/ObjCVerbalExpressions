@@ -60,4 +60,6 @@ The range method expects a nil terminated list of string pairs like so:
 
 ```objective-c
 BEZVerEx *rangeEx = [[BEZVerEx expression] range:@"a", @"b", "c", "g", nil];
-````
+```
+
+If there is an odd number of range arguments, the VerEx will ignore the range modifier and print a warning to the console.
