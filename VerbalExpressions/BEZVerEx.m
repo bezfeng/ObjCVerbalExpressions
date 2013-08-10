@@ -125,15 +125,15 @@
 - (BEZVerEx *)rangeFrom:(NSString *)from, ... {
   va_list args;
   if (from) {
-    NSMutableString *rangeString = [NSMutableString stringWithFormat:@"["];
+    NSMutableString *rangeString = [NSMutableString stringWithFormat:@"[%@-", from];
     int argCount = 1;
     
     va_start(args, from);
     NSString *s;
-    NSString *to;
-    for (s = from, to = va_arg(args, NSString *); s != nil && to != nil; s = va_arg(args, NSString *), to = va_arg(args, NSString *)) {
-      [rangeString appendFormat:@"%@-%@", s, to];
+    while ((s = va_arg(args, NSString *))) {
       argCount++;
+      if (argCount % 2 == 0) [rangeString appendString:s];
+      else [rangeString appendFormat:@"%@-", s];
     }
     va_end(args);
     
